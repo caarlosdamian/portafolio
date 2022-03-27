@@ -13,7 +13,7 @@ const Form = () => {
         'service_2mawbmg',
         "template_dk8khsi",
         form.current,
-        "yDylG8DWRmhrSHqE-"
+        process.env.REACT_APP_EMAIL_API_KEY
       )
       .then(
         (result) => {
