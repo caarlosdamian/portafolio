@@ -1,0 +1,22 @@
+.app {
+  scroll-behavior: smooth;
+    height: 100vh;
+    .sections {
+      width: 100%;
+      background-color: #E1E0E0;
+      position: relative;
+
+      scroll-snap-type: y mandatory;
+      scrollbar-width: none; //for firefox
+      // transition: 5ms all ease-out;
+      &::-webkit-scrollbar {
+        display: none; //other webBrowsers
+      }
+  
+      > * {
+        width: 100vw;
+        height: 100vh;
+        // scroll-snap-align: start;
+      }
+    }
+  }

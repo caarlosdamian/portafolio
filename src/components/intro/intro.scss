@@ -1,0 +1,81 @@
+@import "../../global.scss";
+
+.intro {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 30px 20px 20px 20px;
+
+  .wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    padding: 40px;
+    @include mobile {
+        gap: 10px;
+      }
+    img {
+      width: 70px;
+
+      //   margin-bottom: 30px;
+    }
+    .header-container {
+      .name-header {
+        font-weight: bold;
+      }
+      h1 {
+        //   font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 70px;
+        line-height: 85px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        @include mobile {
+          font-size: 50px;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 85px;
+      width: 85%;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      @include mobile {
+        font-size: 30px;
+        width: 100%;
+      }
+      //   margin-top: 20px;
+      span {
+        color: crimson;
+      }
+    }
+    .icon-container {
+      margin-top: 20px;
+      display: flex;
+      width: 150px;
+      justify-content: space-around;
+      //   margin-bottom: 20px;
+    }
+    a {
+      align-self: center;
+
+      img {
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
